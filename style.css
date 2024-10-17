@@ -1,7 +1,8 @@
 body {
     background-color: darkslategray;
-    text-emphasis-color: aliceblue;
+    text-emphasis-color: #b6cef2;
 }
+
 
 h1 {
     color: aliceblue;
@@ -12,5 +13,19 @@ p {
 }
 
 a {
-    color: coral;
+    color: #b6cef2;
+}
+
+.pretty-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline-block for spacing */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
 }
