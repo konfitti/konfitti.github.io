@@ -5,6 +5,10 @@ body {
     font-size: larger;
 }
 
+h1, p, a {
+    justify-content: center;
+    display: flex;
+}
 
 h1 {
     color: rgb(255, 255, 255);
@@ -32,8 +36,14 @@ a {
     border: none; /* No border */
     border-radius: 8px; /* Rounded corners */
     transition: background-color 0.3s; /* Smooth transition */
+    justify-content: center;
 }
 
 .pretty-button:hover {
     background-color: rgb(148, 67, 67); /* Darker green on hover */
+}
+
+.pink-floyd {
+    justify-content: center;
+    display: flex;
 }
