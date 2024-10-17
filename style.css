@@ -1,31 +1,39 @@
 body {
     background-color: darkslategray;
     text-emphasis-color: #b6cef2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
 }
 
 
 h1 {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 
 p {
     color: aliceblue;
+    font-family:'Times New Roman', Times, serif;
 }
 
 a {
-    color: #b6cef2;
+    color: wheat;
 }
 
 .pretty-button {
-    background-color: #4CAF50; /* Green background */
+    background-color:rgb(205, 92, 92); /* Green background */
     color: white; /* White text */
     padding: 15px 32px; /* Padding */
     text-align: center; /* Centered text */
     text-decoration: none; /* No underline */
     display: inline-block; /* Inline-block for spacing */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px; /* Font size */
     margin: 4px 2px; /* Margin */
     border: none; /* No border */
     border-radius: 8px; /* Rounded corners */
     transition: background-color 0.3s; /* Smooth transition */
+}
+
+.pretty-button:hover {
+    background-color: rgb(148, 67, 67); /* Darker green on hover */
 }
