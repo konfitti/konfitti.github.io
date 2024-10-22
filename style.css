@@ -43,6 +43,11 @@ a {
     background-color: rgb(73, 73, 73); /* Darker green on hover */
 }
 
+.cb {
+    justify-content: center;
+    display: flex;
+}
+
 .pink-floyd {
     justify-content: center;
     display: flex;
