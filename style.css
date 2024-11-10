@@ -52,3 +52,7 @@ a {
     justify-content: center;
     display: flex;
 }
+
+.js-button {
+    cursor:pointer;
+}
