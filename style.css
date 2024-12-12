@@ -56,3 +56,7 @@ a {
 .js-button {
     cursor:pointer;
 }
+
+#audio-container {
+    justify-content: left !important;
+}

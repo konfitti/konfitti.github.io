@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>♥️ Mehmet Hocam ♥️</title>
+    <link rel="icon" href="/Fotos/42.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Files</title>
+    <style>
+        body {
+            background-color: #000000;
+            text-emphasis-color: #b6cef2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+        }
+
+        h1,
+        a {
+            justify-content: center;
+            display: flex;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+        }
+
+        p {
+            color:white ;
+        }
+
+        .pretty-button {
+            /* background-color:rgb(205, 92, 92); */ /* Green background */
+            color: white; /* White text */
+            padding: 15px 32px; /* Padding */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* No underline */
+            display: inline-block; /* Inline-block for spacing */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px; /* Font size */
+            margin: 4px 2px;/* Margin */
+            border: none;/* No border */
+            border-radius: 8px;/* Rounded corners */
+            transition: background-color 0.3s;/* Smooth transition */
+            justify-content: center;
+        }
+
+        .pretty-button:hover {
+            background-color: rgb(73, 73, 73);
+            /* Darker green on hover */
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <h1>Audio Files</h1>
+    <a href="/index.html" class="pretty-button" style="background-color:yellowgreen; color: black;">Geri dön</a>
+    <p></p>
+
+    <a href="/Almanca/Deutsch-A1.2-Schulerbuch.pdf" class="pretty-button"
+        style="background-color:rgb(255, 40, 40); color: black;">Schülersbuch</a>
+    <a href="/Almanca/Deutsch-A1.2-Arbeitsbuch.pdf" class="pretty-button"
+        style="background-color:rgb(255, 128, 25); color: black;">Arbeitsbuch</a>
+    <p></p>
+
+    <div id="audio-container">
+        <script>
+            async function loadAudioFiles() {
+                const response = await fetch('audio-files.json');
+                const audioFiles = await response.json();
+                const audioContainer = document.getElementById('audio-container');
+
+                audioFiles.forEach(file => {
+                    const
+                    label = document.createElement('p');
+                    label.textContent = file;
+                    audioContainer.appendChild(label);
+                    audioElement = document.createElement('audio');
+                    audioElement.controls = true;
+                    audioElement.src = `/Almanca/${file}`;
+                    audioContainer.appendChild(audioElement);
+
+                });
+            }
+
+            // Load audio files on page load
+            loadAudioFiles();
+        </script>
+    </div>
+
+</body>
+
+</html>
